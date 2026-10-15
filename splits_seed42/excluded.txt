@@ -1,1 +1,0 @@
-D:/TEST-1/dc-yolo26-crowd/datasets/sht_a/images/train/shta_IMG_121.jpg
