@@ -1,0 +1,57 @@
+# DC-YOLO26n: YOLO26n + P2 micro-head + EMA attention for crowd counting
+# 基于 Ultralytics YOLO26（AGPL-3.0）修改，检测路输出 P2/P3/P4/P5 四尺度，
+# 密度计数分支（DensityHead）由 crowd/model.py 自动挂接，不在此 YAML 中声明。
+#
+# 用法: yolo task=detect 不直接使用；请通过 train.py 中的 CrowdTrainer 训练。
+
+# Parameters
+nc: 1 # 单类别：head
+end2end: True # 保留 YOLO26 双检测头联合训练（one-to-many + one-to-one）
+reg_max: 1 # YOLO26 已移除 DFL
+scales:
+  # [depth, width, max_channels]
+  n: [0.50, 0.25, 1024]
+
+# YOLO26n backbone (与官方一致)
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, Conv, [64, 3, 2]] # 0-P1/2
+  - [-1, 1, Conv, [128, 3, 2]] # 1-P2/4
+  - [-1, 2, C3k2, [256, False, 0.25]] # 2
+  - [-1, 1, Conv, [256, 3, 2]] # 3-P3/8
+  - [-1, 2, C3k2, [512, False, 0.25]] # 4
+  - [-1, 1, Conv, [512, 3, 2]] # 5-P4/16
+  - [-1, 2, C3k2, [512, True]] # 6
+  - [-1, 1, Conv, [1024, 3, 2]] # 7-P5/32
+  - [-1, 2, C3k2, [1024, True]] # 8
+  - [-1, 1, SPPF, [1024, 5, 3, True]] # 9
+  - [-1, 2, C2PSA, [1024]] # 10
+
+# DC-YOLO26n head: P2-P5 四尺度 + P2 节点 EMA 注意力
+head:
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]] # 11
+  - [[-1, 6], 1, Concat, [1]] # 12 cat backbone P4
+  - [-1, 2, C3k2, [512, True]] # 13
+
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]] # 14
+  - [[-1, 4], 1, Concat, [1]] # 15 cat backbone P3
+  - [-1, 2, C3k2, [256, True]] # 16 (P3/8)
+
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]] # 17
+  - [[-1, 2], 1, Concat, [1]] # 18 cat backbone P2
+  - [-1, 2, C3k2, [128, True]] # 19 (P2/4)
+  - [-1, 1, EMA, [8]] # 20 (P2/4) EMA 高效多尺度注意力, factor=8
+
+  - [-1, 1, Conv, [128, 3, 2]] # 21
+  - [[-1, 16], 1, Concat, [1]] # 22 cat head P3
+  - [-1, 2, C3k2, [256, True]] # 23 (P3/8)
+
+  - [-1, 1, Conv, [256, 3, 2]] # 24
+  - [[-1, 13], 1, Concat, [1]] # 25 cat head P4
+  - [-1, 2, C3k2, [512, True]] # 26 (P4/16)
+
+  - [-1, 1, Conv, [512, 3, 2]] # 27
+  - [[-1, 10], 1, Concat, [1]] # 28 cat head P5
+  - [-1, 1, C3k2, [1024, True, 0.5, True]] # 29 (P5/32)
+
+  - [[20, 23, 26, 29], 1, Detect, [nc]] # 30 Detect(P2, P3, P4, P5)
