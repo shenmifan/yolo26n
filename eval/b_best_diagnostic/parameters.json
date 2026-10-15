@@ -1,0 +1,14 @@
+{
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.5,
+    "max_det": 2000,
+    "grid": 16,
+    "tau": 2.0
+  },
+  "source_split": "test",
+  "diagnostic": true,
+  "weights_sha256": "e0f905a4dc85561b698eb93ea382df49294c1cfd6d938080cfc21dad54cfc129",
+  "protocol_id": "3bd8b0d972e25f59219f67a2cc83ed6486e2de05e876452c2d1426f065e85bc5"
+}

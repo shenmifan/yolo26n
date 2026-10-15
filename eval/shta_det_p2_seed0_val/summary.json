@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.5,
+    "max_det": 2000,
+    "grid": 16,
+    "tau": 2.0
+  },
+  "source_split": "val",
+  "diagnostic": false,
+  "weights_sha256": "06a5ec322b1d70f9ac38efc2157df9ff68c63af727adbe863aaa1ab0bb039811",
+  "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+  "weights": "/root/autodl-tmp/test/dc-yolo26-crowd/runs/crowd/shta_det_p2_seed0/weights/best.pt",
+  "data": "/root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_a_density_v2/data_server.yaml",
+  "images": 60,
+  "gt_source": "original_points",
+  "metrics": {
+    "detect": {
+      "MAE": 150.75,
+      "RMSE": 243.833173843648,
+      "bias": 3.45
+    }
+  },
+  "detection_limit_images": 2,
+  "torch": "2.3.0+cu121",
+  "ultralytics": "8.4.175",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 3080 Ti",
+  "variant": "det_p2",
+  "training_seed": 0,
+  "crowd_cfg": {
+    "grid": 16,
+    "dgf_tau": 2.0,
+    "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+    "den_gain": 0.0,
+    "cnt_gain": 0.0,
+    "cons_gain": 0.0,
+    "variant": "det_p2",
+    "density_enabled": false,
+    "training_seed": 0
+  },
+  "evaluation_batch": 4
+}

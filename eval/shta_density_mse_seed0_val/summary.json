@@ -1,0 +1,54 @@
+{
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.5,
+    "max_det": 2000,
+    "grid": 16,
+    "tau": 3.0
+  },
+  "source_split": "val",
+  "diagnostic": false,
+  "weights_sha256": "6aa4d803730f1ed1e411da2cf28105358b93ab92352afd55b74ca2551892059e",
+  "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+  "weights": "/root/autodl-tmp/test/dc-yolo26-crowd/runs/crowd/shta_density_mse_seed0/weights/best.pt",
+  "data": "/root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_a_density_v2/data_server.yaml",
+  "images": 60,
+  "gt_source": "original_points",
+  "metrics": {
+    "detect": {
+      "MAE": 181.93333333333334,
+      "RMSE": 326.0620084176219,
+      "bias": -173.03333333333333
+    },
+    "density": {
+      "MAE": 171.67977930704754,
+      "RMSE": 215.58350606325246,
+      "bias": 113.47568384806316
+    },
+    "fused": {
+      "MAE": 97.8114501953125,
+      "RMSE": 182.2394697451078,
+      "bias": -21.83295593261719
+    }
+  },
+  "detection_limit_images": 0,
+  "torch": "2.3.0+cu121",
+  "ultralytics": "8.4.175",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 3080 Ti",
+  "variant": "density_mse",
+  "training_seed": 0,
+  "crowd_cfg": {
+    "grid": 16,
+    "dgf_tau": 2.0,
+    "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+    "den_gain": 1.0,
+    "cnt_gain": 0.0,
+    "cons_gain": 0.0,
+    "variant": "density_mse",
+    "density_enabled": true,
+    "training_seed": 0
+  },
+  "evaluation_batch": 4
+}

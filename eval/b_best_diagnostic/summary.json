@@ -1,0 +1,40 @@
+{
+  "settings": {
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.5,
+    "max_det": 2000,
+    "grid": 16,
+    "tau": 2.0
+  },
+  "source_split": "test",
+  "diagnostic": true,
+  "weights_sha256": "e0f905a4dc85561b698eb93ea382df49294c1cfd6d938080cfc21dad54cfc129",
+  "protocol_id": "3bd8b0d972e25f59219f67a2cc83ed6486e2de05e876452c2d1426f065e85bc5",
+  "weights": "D:\\TEST-1\\dc-yolo26-crowd\\runs\\detect\\runs\\train_sht_b\\dc_yolo26n\\weights\\best.pt",
+  "data": "D:\\TEST-1\\dc-yolo26-crowd\\datasets\\sht_b\\data_seed42.yaml",
+  "images": 316,
+  "gt_source": "original_points",
+  "metrics": {
+    "detect": {
+      "MAE": 20.503164556962027,
+      "RMSE": 36.640530577663014,
+      "bias": -19.674050632911392
+    },
+    "density": {
+      "MAE": 18.501391824287705,
+      "RMSE": 31.070496185079683,
+      "bias": -14.525291964977603
+    },
+    "fused": {
+      "MAE": 57.678657199763045,
+      "RMSE": 86.68897654364243,
+      "bias": 56.66316859933394
+    }
+  },
+  "detection_limit_images": 0,
+  "torch": "2.5.1+cu121",
+  "ultralytics": "8.4.158",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 3050 Laptop GPU"
+}

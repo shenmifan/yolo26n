@@ -1,0 +1,11 @@
+{
+  "settings": {
+    "imgsz": 640,
+    "normalization": "unit_rgb",
+    "output": "signed_density_integral"
+  },
+  "weights_sha256": "7d2d5bfd28b3fc7389476615f9250d9b15eb6dc159a6a1515076140b36a050d7",
+  "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+  "source_split": "val",
+  "diagnostic": false
+}

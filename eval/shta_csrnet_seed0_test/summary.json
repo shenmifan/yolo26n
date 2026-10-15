@@ -1,0 +1,29 @@
+{
+  "settings": {
+    "imgsz": 640,
+    "normalization": "imagenet",
+    "output": "signed_density_integral"
+  },
+  "weights_sha256": "cde0d0130ceb5b765d6e1b1d232aca1b3be55309298bf8a5c636081ba3f1b94b",
+  "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+  "source_split": "test",
+  "diagnostic": false,
+  "metrics": {
+    "density": {
+      "MAE": 84.78524245796623,
+      "RMSE": 132.36225330059136,
+      "bias": -23.25127303993309
+    }
+  },
+  "images": 182,
+  "gt_source": "original_points",
+  "data": "/root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_a_density_v2/data_server.yaml",
+  "weights": "/root/autodl-tmp/test/dc-yolo26-crowd/runs/crowd/shta_csrnet_seed0/weights/best.pt",
+  "variant": "csrnet",
+  "training_seed": 0,
+  "torch": "2.3.0+cu121",
+  "ultralytics": "8.4.175",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 3080 Ti",
+  "evaluation_batch": 4
+}
