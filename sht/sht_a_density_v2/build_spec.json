@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "source": "D:/TEST-1/data/part_A",
+  "source_protocol_id": "e374d71d6d881cd825c65315c03e2f45c1735bfa6710d16fee78f0059de33d21",
+  "fixed_sigma": null,
+  "gaussian_truncate": 4.0,
+  "tolerance": 0.0001,
+  "density_code_sha256": "11611fa2e3c0653448b01e2f4502623c2f84a5e6b143d9fae1a68fa60cca8e5c",
+  "valid_point_rule": "finite and 0<=x<width and 0<=y<height; no coordinate shift",
+  "outside_point_policy": "exclude from spatial target and list individually; retain original evaluation count",
+  "duplicate_policy": "preserve each annotation entry, do not deduplicate",
+  "normalization": "each adaptive Gaussian independently normalized at image boundaries plus numerical mass correction",
+  "transform_sizes": [
+    320,
+    640,
+    768
+  ],
+  "numpy": "2.2.6",
+  "torch": "2.5.1+cu121",
+  "adaptive_k": 3,
+  "adaptive_beta": 0.3,
+  "adaptive_sigma_min": 1.0
+}

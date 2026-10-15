@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "source": "D:/TEST-1/dc-yolo26-crowd/../data/part_B",
+  "source_protocol_id": "3bd8b0d972e25f59219f67a2cc83ed6486e2de05e876452c2d1426f065e85bc5",
+  "fixed_sigma": 15.0,
+  "gaussian_truncate": 4.0,
+  "tolerance": 0.0001,
+  "density_code_sha256": "11611fa2e3c0653448b01e2f4502623c2f84a5e6b143d9fae1a68fa60cca8e5c",
+  "valid_point_rule": "finite and 0<=x<width and 0<=y<height; no coordinate shift",
+  "outside_point_policy": "exclude from spatial target and list individually; retain original evaluation count",
+  "duplicate_policy": "preserve each annotation entry, do not deduplicate",
+  "normalization": "per-source Gaussian boundary-mass correction plus numerical mass correction",
+  "transform_sizes": [
+    320,
+    640,
+    768
+  ],
+  "numpy": "2.2.6",
+  "torch": "2.5.1+cu121"
+}

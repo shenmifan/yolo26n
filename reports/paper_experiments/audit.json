@@ -1,0 +1,2498 @@
+{
+  "expected_seeds": [
+    0,
+    1,
+    2
+  ],
+  "std": "sample standard deviation, ddof=1; null for n<2",
+  "runs": [
+    {
+      "dataset": "sht_a",
+      "variant": "full",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 273.6208791208791,
+          "RMSE": 350.77264011742,
+          "bias": -273.6208791208791
+        },
+        "density": {
+          "MAE": 107.3610122177627,
+          "RMSE": 172.82214709335219,
+          "bias": 55.07004169841389
+        },
+        "fused": {
+          "MAE": 104.07499655000456,
+          "RMSE": 167.52115143813091,
+          "bias": 16.456856088323907
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 1.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "3037d49b7dd805d8a66d1e5da07b298c48db7c5a5a090f0c64eb4a21c94c2257",
+      "inputs_sha256": {
+        "runs/crowd/shta_density_v2_seed0/weights/best.pt": "3037d49b7dd805d8a66d1e5da07b298c48db7c5a5a090f0c64eb4a21c94c2257",
+        "runs/eval/shta_density_v2_seed0_val/summary.json": "4c6038ff4d8b2fdfd8f724ecb48081c9b5db7038a9d0c21e749aeb3fd5dcc26d",
+        "runs/eval/shta_density_v2_seed0_val/parameters.json": "821ecbefaabf56ba9c5fe77bf391420b79a77e088eb3a4e0be8b862a34d3f54e",
+        "runs/eval/shta_density_v2_seed0_val/per_image.csv": "87f136c485d90caf5c35f0f2bc55d06454de340deb669c87962bba641bd347cb",
+        "runs/eval/shta_density_v2_seed0_test/summary.json": "87a15051a846c53e5fb85f3965b06b722522ca2f43bace5cb83d5a12965f48e1",
+        "runs/eval/shta_density_v2_seed0_test/parameters.json": "616df25f77ba939b52166ccba8c98239b428a0cc114c3db4909ee9406d8adf82",
+        "runs/eval/shta_density_v2_seed0_test/per_image.csv": "0e781cd6285306b95c3334ac7286af50b33e641254b9f9833604d1e32aa2cd4c",
+        "runs/eval/shta_density_v2_seed0_val/tau_sweep.csv": "82cea83c6f55acfdd6a8ea9b2917e0de2dc87999aa6c8fdb974a4a7c57150743",
+        "runs/crowd/shta_density_v2_seed0/args.yaml": "63c0a09b50a1a7d5cd55f174a38e93e2de3eea22e30594b8b168f2891e93e36d",
+        "runs/crowd/shta_density_v2_seed0/results.csv": "d86bc9403d9e0564079e210a297e3cfc063bcf5adb332ba2f69cc733d89f9cb3"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "full",
+      "seed": 1,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 312.7912087912088,
+          "RMSE": 404.9912900976329,
+          "bias": -312.7912087912088
+        },
+        "density": {
+          "MAE": 94.84974752153668,
+          "RMSE": 164.7850675805009,
+          "bias": 42.36567597860818
+        },
+        "fused": {
+          "MAE": 94.94170286367228,
+          "RMSE": 161.46431321942748,
+          "bias": 17.734393455170014
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 0.5
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "8586b88c74b173a83f9206f00b0f6d67bc7a6be1861609ff4f89e7cc787852ef",
+      "inputs_sha256": {
+        "runs/crowd/shta_density_v2_seed1/weights/best.pt": "8586b88c74b173a83f9206f00b0f6d67bc7a6be1861609ff4f89e7cc787852ef",
+        "runs/eval/shta_density_v2_seed1_val/summary.json": "ee180d9c5e119970674706e9c732d179479d240c56dbe26d14bb7f840a778aae",
+        "runs/eval/shta_density_v2_seed1_val/parameters.json": "3722b3c04b39846217a386954ae8a825484af4983289fed88be7803ac7ceb77f",
+        "runs/eval/shta_density_v2_seed1_val/per_image.csv": "f5492713ef1cdfadff46876894a6d3bdc835214b9abbfddbe0e19ec3536c88a0",
+        "runs/eval/shta_density_v2_seed1_test/summary.json": "4c31c170bc661ff95e18878297c6f03dd871a4c7b3ddd8632f714e28bfd0670b",
+        "runs/eval/shta_density_v2_seed1_test/parameters.json": "26f05e0cdced195354a66bfcb0d0778c60a561fd3f2f2442feea846d05db2882",
+        "runs/eval/shta_density_v2_seed1_test/per_image.csv": "a62fa8ea3b1c46a1484fb42a55b9042b986bb386ee612a6b38944ae1662dbf74",
+        "runs/eval/shta_density_v2_seed1_val/tau_sweep.csv": "efba3d5dedec4a8717d14dc092cd938f80197964b69d2a4fd26628bf922b6447",
+        "runs/crowd/shta_density_v2_seed1/args.yaml": "c0aefd9e733de2bd71c9d2a54982f3db285c1fe245e47f27efb3e5f658f16483",
+        "runs/crowd/shta_density_v2_seed1/results.csv": "9acd94acdb5b8fd47994dcf3e49bcb70d26d17f22df7bbb0dfb8b1eb3f329c8c"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "full",
+      "seed": 2,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 286.7087912087912,
+          "RMSE": 374.45590564808197,
+          "bias": -286.7087912087912
+        },
+        "density": {
+          "MAE": 98.16782760620117,
+          "RMSE": 171.38013865513818,
+          "bias": 47.58805423778492
+        },
+        "fused": {
+          "MAE": 91.83626180166726,
+          "RMSE": 168.54734203688804,
+          "bias": 12.127368623083765
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 1.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "21f62196eb079a60ee5ba3a97d68cfab1743cb92262276e73d3ef16dd9b1c214",
+      "inputs_sha256": {
+        "runs/crowd/shta_density_v2_seed2/weights/best.pt": "21f62196eb079a60ee5ba3a97d68cfab1743cb92262276e73d3ef16dd9b1c214",
+        "runs/eval/shta_density_v2_seed2_val/summary.json": "ac6cc703e46a48f6ffbaa7123462a3b95f68f349394d6321dd5ef40b328f188a",
+        "runs/eval/shta_density_v2_seed2_val/parameters.json": "661c7316af43c7864cb3593776d8c31ced388f1ad44b2532373c67fed838cb26",
+        "runs/eval/shta_density_v2_seed2_val/per_image.csv": "7f6d120c6e80315a889bc902396c851a151ff9dfae0fe8105e7ccb4b5eaf693f",
+        "runs/eval/shta_density_v2_seed2_test/summary.json": "18dddc09d2db185bb39e256d6e77f1e1e007c68a6be1b0227e16438d41690aa9",
+        "runs/eval/shta_density_v2_seed2_test/parameters.json": "af2f3a4fd41e5652033d3165285b9b7d2bade6e03ad3747f6f1748ed729742ee",
+        "runs/eval/shta_density_v2_seed2_test/per_image.csv": "d3f5446bfb6c52fc61a03458c3aea72989fc8179b12cbfcd918894f49c6587e7",
+        "runs/eval/shta_density_v2_seed2_val/tau_sweep.csv": "bc3b8f754a24911e545799f0f635afe092ca6b8e59d2f6a4bb608462ece84483",
+        "runs/crowd/shta_density_v2_seed2/args.yaml": "8c46fae18e88f7ee1978dca8d7721cecb196b2582b2da050bfdfd6ec72a6f8d2",
+        "runs/crowd/shta_density_v2_seed2/results.csv": "2cf950769cb03a09e871f0f691678f2a40c16332651fab95d49a87219e700dc5"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_recal",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 240.52747252747253,
+          "RMSE": 301.6180358672862,
+          "bias": -240.28571428571428
+        },
+        "density": {
+          "MAE": 205.36438713492927,
+          "RMSE": 351.5971600126313,
+          "bias": -121.42725485497779
+        },
+        "fused": {
+          "MAE": 149.52846756610242,
+          "RMSE": 213.04039253897272,
+          "bias": -0.5430500219156454
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "1e56a55aad01ba0903e02e8f024ae997ab3a39f06b2074f895af0064c5bfe1e4",
+      "inputs_sha256": {
+        "runs/crowd/shta_no_recal_seed0/weights/best.pt": "1e56a55aad01ba0903e02e8f024ae997ab3a39f06b2074f895af0064c5bfe1e4",
+        "runs/eval/shta_no_recal_seed0_val/summary.json": "3783113137e546fe26e246e484ee6d2015bed889e7f5ecf7705d76b9fce484cf",
+        "runs/eval/shta_no_recal_seed0_val/parameters.json": "27640f1e2bec6aad7b3a53c47939c4afeca05438a9b9ccfb174982568cf1cec6",
+        "runs/eval/shta_no_recal_seed0_val/per_image.csv": "f70876e2430f403e3d94506c71c1124173d7abc13f9acf14e74ed84ee12720ce",
+        "runs/eval/shta_no_recal_seed0_test/summary.json": "021d331ae7f408c81a89a1f950865fddd9212033b3ccb323e66d6e3187d6ebaf",
+        "runs/eval/shta_no_recal_seed0_test/parameters.json": "0b77152848b47722f3f7359a6cdae6972ee4bf719aba46eb8b41b2ef361ed29c",
+        "runs/eval/shta_no_recal_seed0_test/per_image.csv": "37d3b99c89fbf9fc066bb273a1113cde6faaaab44d7425d381ef0c0c918eaf91",
+        "runs/eval/shta_no_recal_seed0_val/tau_sweep.csv": "0e1aef53c77c3060a7ad4ea83d1b967c480f4d20c864d793a8beb2efd6b4f7fe",
+        "runs/crowd/shta_no_recal_seed0/args.yaml": "ccb40880cd4074df924724dde5eb1cabb49cdaac8e210681c284abe71887e2ad",
+        "runs/crowd/shta_no_recal_seed0/results.csv": "ac6afcf243e76db8306d3d82dddd5f54991a41116d47ca5d23b6a7fb3010331d"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_p2",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 185.30769230769232,
+          "RMSE": 258.19698162194175,
+          "bias": -184.28571428571428
+        },
+        "density": {
+          "MAE": 95.87054650862139,
+          "RMSE": 160.2014723295943,
+          "bias": 56.265362435644796
+        },
+        "fused": {
+          "MAE": 95.24401468759055,
+          "RMSE": 153.80863476191504,
+          "bias": 20.840192868159367
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 1.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "02d5e971b344fa16791d73a975e4999271f50248ce77f5b9350c8dd318f4642c",
+      "inputs_sha256": {
+        "runs/crowd/shta_no_p2_seed0/weights/best.pt": "02d5e971b344fa16791d73a975e4999271f50248ce77f5b9350c8dd318f4642c",
+        "runs/eval/shta_no_p2_seed0_val/summary.json": "371bd23ccac96996dccff0a70c6a7b8be73c7b5b20498687a9925bfe738cf2fe",
+        "runs/eval/shta_no_p2_seed0_val/parameters.json": "aa4f1464c80f42975b8c75c4f3ec9110bb756443170f70d52615b335a77c1563",
+        "runs/eval/shta_no_p2_seed0_val/per_image.csv": "fcb3d52f5b9c70a00702344666725b30e600fa3ac3899bc5c632561c9b2b451a",
+        "runs/eval/shta_no_p2_seed0_test/summary.json": "cf73c89a0e4995bb3d6dc1a74f86e53bd9f858c9c74189708e4ead46bb5bbd23",
+        "runs/eval/shta_no_p2_seed0_test/parameters.json": "21d1c889d68a6b155fb9d0f4cd8ce2e1e148e9d1086df9226caf98db805fed29",
+        "runs/eval/shta_no_p2_seed0_test/per_image.csv": "241af60f08b0fdad9c822f9a30bc821e736c5dc4dcd556067077a760605aa4e2",
+        "runs/eval/shta_no_p2_seed0_val/tau_sweep.csv": "86c4e031f02f0687d3b06e177932bbfb997241578aa25a0e77b8c1e382353a07",
+        "runs/crowd/shta_no_p2_seed0/args.yaml": "abb452ab4a7503044c66a6a516fa610751f91c499270a6c313620a86a4460e21",
+        "runs/crowd/shta_no_p2_seed0/results.csv": "8b8e85774b0bf3d37fb8c247db720a7909b66bbd6a1205ddbb19c997523bfca1"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_p2",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 157.1978021978022,
+          "RMSE": 228.93247240851815,
+          "bias": 38.747252747252745
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "06a5ec322b1d70f9ac38efc2157df9ff68c63af727adbe863aaa1ab0bb039811",
+      "inputs_sha256": {
+        "runs/crowd/shta_det_p2_seed0/weights/best.pt": "06a5ec322b1d70f9ac38efc2157df9ff68c63af727adbe863aaa1ab0bb039811",
+        "runs/eval/shta_det_p2_seed0_val/summary.json": "9b91322cdcf3a7a515c333ccc75ebe11d76b2332d6acb536bba96da585172f75",
+        "runs/eval/shta_det_p2_seed0_val/parameters.json": "a22f88b210a42f0691c95d898091985410692578d86f862873ca81b818b5f6b8",
+        "runs/eval/shta_det_p2_seed0_val/per_image.csv": "046d1230e5e013ae2f6be73e7c501b26a12d3c290f3422dbabc67186e4e9bfee",
+        "runs/eval/shta_det_p2_seed0_test/summary.json": "9ba8f70952d5f89095d0eedd9a54f44e03be0569c5339dcce4e0b2fabc7f09de",
+        "runs/eval/shta_det_p2_seed0_test/parameters.json": "2a0bd64715283f3b5dded8a98984cc72b470176ca82278cff9ead11f0bac1eaf",
+        "runs/eval/shta_det_p2_seed0_test/per_image.csv": "ab0fe1a6cc2f6eb0dece6786a93ba1ab3729bc6afcc9b185059a43d4b9ad880a",
+        "runs/crowd/shta_det_p2_seed0/args.yaml": "30101a6e00e34e960ed03349e00cfcf81aa664ca34a242adfc301f9db91fa17d",
+        "runs/crowd/shta_det_p2_seed0/results.csv": "23e5c31f3f6743db36c0fb7c558d256a0204175b40ec21235fbee873c77d19a0"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_yolo26",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 81.84065934065934,
+          "RMSE": 166.52770947196151,
+          "bias": -36.39010989010989
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "6470b78ad7b7d737a9ff8113e95fc115bf01a0a259ea61bc6eee1e29ae19effd",
+      "inputs_sha256": {
+        "runs/crowd/shta_det_yolo26_seed0/weights/best.pt": "6470b78ad7b7d737a9ff8113e95fc115bf01a0a259ea61bc6eee1e29ae19effd",
+        "runs/eval/shta_det_yolo26_seed0_val/summary.json": "076a77889779f792fa3684a4a87b6d55568789e5a6aaa098526c53f34b815747",
+        "runs/eval/shta_det_yolo26_seed0_val/parameters.json": "8e245e09458a8a12462d2317ee164f84b009a07a5866567ac33a4b06d140e000",
+        "runs/eval/shta_det_yolo26_seed0_val/per_image.csv": "dc9370fa103bcafb5c57400e86a3af9e2a26b384d1ac6b5b8d9687a917c88166",
+        "runs/eval/shta_det_yolo26_seed0_test/summary.json": "71e7e4e932486e8afc80eedb800ef243ab71ac62b7e29ce7f6c79a194e2641f5",
+        "runs/eval/shta_det_yolo26_seed0_test/parameters.json": "de9f2f20654b04a13b0e1d3c5a3cc3c52d040b0717ab469e1caa986b2893b701",
+        "runs/eval/shta_det_yolo26_seed0_test/per_image.csv": "aca8545ff933e4eb879ebf3862db843e9821fb3eb730cc425b499d405555c6dc",
+        "runs/crowd/shta_det_yolo26_seed0/args.yaml": "dafe5f6f935d8133c8a435f8c792e6b1a5882eca7d31b1d41b389fdf8fa49e29",
+        "runs/crowd/shta_det_yolo26_seed0/results.csv": "82b7da6bd26bdac8c373f264e5e2b6d3335618f5c8a3041b64558953ff0d3cab"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_count",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 292.4835164835165,
+          "RMSE": 386.6437295836745,
+          "bias": -292.4835164835165
+        },
+        "density": {
+          "MAE": 235.78153388054815,
+          "RMSE": 250.43295139497982,
+          "bias": 208.54159059629336
+        },
+        "fused": {
+          "MAE": 93.00573965219351,
+          "RMSE": 143.64468872698254,
+          "bias": 1.9297607757233002
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "ddb6f9ccedfa911fc9135b0dda6cb466d9d68adbfc4161bcb9ba4d36e8a38489",
+      "inputs_sha256": {
+        "runs/crowd/shta_no_count_seed0/weights/best.pt": "ddb6f9ccedfa911fc9135b0dda6cb466d9d68adbfc4161bcb9ba4d36e8a38489",
+        "runs/eval/shta_no_count_seed0_val/summary.json": "e504f3c428264d729c430b8759595e2c417237d5d3389fa3a11134335b7daee5",
+        "runs/eval/shta_no_count_seed0_val/parameters.json": "059652ff93ec9ffa85b327c5a98be769490f74474b0aed395840759843938de7",
+        "runs/eval/shta_no_count_seed0_val/per_image.csv": "7e16320d077e0f35629cb8466f7527b584373ebec7222849ed84fee11f62531e",
+        "runs/eval/shta_no_count_seed0_test/summary.json": "336e0a35daea61c8e65e37e6849ced5d37f125b4519ec963b608bccfc1bd3c88",
+        "runs/eval/shta_no_count_seed0_test/parameters.json": "3f58fcd4ebf79b779ac95b87033bf1f2eb6cbdea390e2acd6ddadd9ed1a8920d",
+        "runs/eval/shta_no_count_seed0_test/per_image.csv": "36cd1f15f2c6b4cef4269a3be14f34a9d2c5b7b5712ffb924dd555a45c3a3279",
+        "runs/eval/shta_no_count_seed0_val/tau_sweep.csv": "b00c9b83c462dc12c83f0b9be7afe40f2ee71a709611a427645644eeb056e534",
+        "runs/crowd/shta_no_count_seed0/args.yaml": "a7935c960647eb6bc1e756d2bf37edbac5cec01dba8df99d062716e39f7a1b79",
+        "runs/crowd/shta_no_count_seed0/results.csv": "a934ddeecf67e916cd4f0a2952362bb55c7de7e9f72e3f7a3e5bd4255cf04744"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_cons",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 191.46153846153845,
+          "RMSE": 333.34693012562127,
+          "bias": -184.67032967032966
+        },
+        "density": {
+          "MAE": 83.46374853364713,
+          "RMSE": 129.2945019927934,
+          "bias": 12.766917155339168
+        },
+        "fused": {
+          "MAE": 78.04655385279393,
+          "RMSE": 128.8237565950701,
+          "bias": -17.360421610402536
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 3.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "6ae91171067d20d35b66274f7c7938764a68cd1f88c0abb384d7bc584c297147",
+      "inputs_sha256": {
+        "runs/crowd/shta_no_cons_seed0/weights/best.pt": "6ae91171067d20d35b66274f7c7938764a68cd1f88c0abb384d7bc584c297147",
+        "runs/eval/shta_no_cons_seed0_val/summary.json": "d7333d48f6b8e7e1c0fc5c739672ee498e5052821da125bb43e13daa10e9d591",
+        "runs/eval/shta_no_cons_seed0_val/parameters.json": "922efd467ead939cb1fc0f7c31205a80806f1af489e232491c1aba55f65dfc2f",
+        "runs/eval/shta_no_cons_seed0_val/per_image.csv": "2b1a4b472619f1c6e48a27dfb49775a74b7f4712043a3f3c23923c0ed0aa8cf6",
+        "runs/eval/shta_no_cons_seed0_test/summary.json": "6e138f61557337993fe22469c088ee6478f3845dcc64741fe8ab2fec9d9d541c",
+        "runs/eval/shta_no_cons_seed0_test/parameters.json": "746770a7f7e219d519f25bb0c592c24ffb208e7699d6e412548f61260dacd1bd",
+        "runs/eval/shta_no_cons_seed0_test/per_image.csv": "474254d1db2bca701f8c69640ad838faad894b36f00aecdf01e5a2ff5e7c32dd",
+        "runs/eval/shta_no_cons_seed0_val/tau_sweep.csv": "e698cfcb4b40ae08c73b5fde1fe2b025dc86f66fcd6d233c9cc9b53ae5108120",
+        "runs/crowd/shta_no_cons_seed0/args.yaml": "af8f25c83e43d03eb94498e66ad18abdf7fb74ed6a85d7ca6c74c59c09f2ffb3",
+        "runs/crowd/shta_no_cons_seed0/results.csv": "d2d3ae9df3c1167efed2a8b207c8fac487e212c69c6528632286af327ccf3351"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "density_mse",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "detect": {
+          "MAE": 144.22527472527472,
+          "RMSE": 275.7620908849343,
+          "bias": -131.5879120879121
+        },
+        "density": {
+          "MAE": 166.97193397270453,
+          "RMSE": 190.78344509988065,
+          "bias": 131.32972272935805
+        },
+        "fused": {
+          "MAE": 78.16767602438455,
+          "RMSE": 137.2275467354444,
+          "bias": -0.5044188866248498
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 3.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "6aa4d803730f1ed1e411da2cf28105358b93ab92352afd55b74ca2551892059e",
+      "inputs_sha256": {
+        "runs/crowd/shta_density_mse_seed0/weights/best.pt": "6aa4d803730f1ed1e411da2cf28105358b93ab92352afd55b74ca2551892059e",
+        "runs/eval/shta_density_mse_seed0_val/summary.json": "c0496c02282e4cbb9b6a35aeb4bffd79f8ca4ac6e2a1df9e5044ea31946d6df0",
+        "runs/eval/shta_density_mse_seed0_val/parameters.json": "1dc84d22ca3d82a827410a00b77b6cfef7aebb205a415b08bcf0d4a651d4f1e1",
+        "runs/eval/shta_density_mse_seed0_val/per_image.csv": "12612a36ff568f89ee30ea785f8deb5eaa4b66b692673615f9c9bf401ff5e46c",
+        "runs/eval/shta_density_mse_seed0_test/summary.json": "d06472e708398cc65a0b241514ff0d5fe6ea8981cd25b66f071d06c1e6898d54",
+        "runs/eval/shta_density_mse_seed0_test/parameters.json": "ac7850864dcef59a6b4295e9cd86fb80421e8b33cbb4e872be024388dcc3513b",
+        "runs/eval/shta_density_mse_seed0_test/per_image.csv": "9363890b1bb82d44e1eb6989fb5b270af5f603d4a89582ad13517011de3ff831",
+        "runs/eval/shta_density_mse_seed0_val/tau_sweep.csv": "a9e064d4ad95ca017154cd6e01e5a68a3b72948c195ebf3c06063ff259bde923",
+        "runs/crowd/shta_density_mse_seed0/args.yaml": "05546b353cf42ec26864f7fc6624b17d310bfbacc7995f6367065464b72b858f",
+        "runs/crowd/shta_density_mse_seed0/results.csv": "50a13849d58326f7b507fcd669d51898a5fb0d06c9eaa474316431c9d5b6c018"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "mcnn",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "density": {
+          "MAE": 130.9326304760608,
+          "RMSE": 199.17463431355856,
+          "bias": -17.48955573616447
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "normalization": "unit_rgb",
+        "output": "signed_density_integral"
+      },
+      "recipe": {
+        "recipe": "matched_canvas_density_v2_v1",
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "Adam",
+        "lr0": 0.0001,
+        "precision": "FP32",
+        "loss": "mean squared density error",
+        "initialization": "Gaussian std=0.01"
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "7d2d5bfd28b3fc7389476615f9250d9b15eb6dc159a6a1515076140b36a050d7",
+      "inputs_sha256": {
+        "runs/crowd/shta_mcnn_seed0/weights/best.pt": "7d2d5bfd28b3fc7389476615f9250d9b15eb6dc159a6a1515076140b36a050d7",
+        "runs/eval/shta_mcnn_seed0_val/summary.json": "59f96e504e46dfdf7dc89ce0ddb1bb1c55841883f0c6f871c24b99657138f402",
+        "runs/eval/shta_mcnn_seed0_val/parameters.json": "d22d9c59e1b53d384ac7bb6ff9cc312eb3d408e3b81db206b16685b38bfc3cff",
+        "runs/eval/shta_mcnn_seed0_val/per_image.csv": "fbcc699ca731171d0131b2d0d41660b15d99d67274571d1423779cc4a7d981e6",
+        "runs/eval/shta_mcnn_seed0_test/summary.json": "aeb71e82c8bf87c9ec8f1a72e3b1ba66a9238b325a75228c2883550ab35e3fd2",
+        "runs/eval/shta_mcnn_seed0_test/parameters.json": "837735c67f56bf2241b73e5b03fab4d023d1391f6be252608b1e2c84d086e3e1",
+        "runs/eval/shta_mcnn_seed0_test/per_image.csv": "221ce24458c0545ea6e5544af412d1305897c436c752107ecb2bfaa902b72633",
+        "runs/crowd/shta_mcnn_seed0/baseline_config.json": "d83bc3167052da792c18af30caebc8f2b02f2d128f5ebfc631a3bf3bba5ba8d1",
+        "runs/crowd/shta_mcnn_seed0/results.csv": "dde6fd6a93738c8ad6cbf8395c63ce33f43b972119b8031406624eecd9a34171"
+      }
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "csrnet",
+      "seed": 0,
+      "protocol_id": "18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5",
+      "metrics": {
+        "density": {
+          "MAE": 84.78524245796623,
+          "RMSE": 132.36225330059136,
+          "bias": -23.25127303993309
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "normalization": "imagenet",
+        "output": "signed_density_integral"
+      },
+      "recipe": {
+        "recipe": "matched_canvas_density_v2_v1",
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "SGD",
+        "lr0": 1e-07,
+        "precision": "FP32",
+        "loss": "sum squared density error per image, averaged over batch",
+        "initialization": "VGG16 ImageNet frontend; Gaussian backend"
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "cde0d0130ceb5b765d6e1b1d232aca1b3be55309298bf8a5c636081ba3f1b94b",
+      "inputs_sha256": {
+        "runs/crowd/shta_csrnet_seed0/weights/best.pt": "cde0d0130ceb5b765d6e1b1d232aca1b3be55309298bf8a5c636081ba3f1b94b",
+        "runs/eval/shta_csrnet_seed0_val/summary.json": "f6b0c99c71995a826a68b38ae4729816c1a50b6db6552a665042f331fc50a50c",
+        "runs/eval/shta_csrnet_seed0_val/parameters.json": "5bc1e037e7a3b6b65704975ec23632486fb0b6f0f8f0f32bb42c5450777e1c71",
+        "runs/eval/shta_csrnet_seed0_val/per_image.csv": "0edd16728611f26c93dd52abc0789cd0a035156e01a0b674272d5c5d0b887a30",
+        "runs/eval/shta_csrnet_seed0_test/summary.json": "1eba94b6b1763f55b199f554e15cb8382160051e4769d4da41db1b9471b608a7",
+        "runs/eval/shta_csrnet_seed0_test/parameters.json": "dd3e0145a83ab8a1caaacc41dd4825b1c77fed1e9bee5fb45faf59fae9404a59",
+        "runs/eval/shta_csrnet_seed0_test/per_image.csv": "30de1a99a8050e4bc49e14ec4c239dc61e932f7f8c4c552826adf8f34b9c4aa4",
+        "runs/crowd/shta_csrnet_seed0/baseline_config.json": "b2481d3492ed452a37b70e11a09093598e3f571ace5f24aedd2867068237c7ee",
+        "runs/crowd/shta_csrnet_seed0/results.csv": "5d9be9e8e9afcbfd267a24234a5e3da8ca988be43000f876b20c450ed57ad68b"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "full",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 26.731012658227847,
+          "RMSE": 48.85800272606062,
+          "bias": -26.15506329113924
+        },
+        "density": {
+          "MAE": 20.163336862491654,
+          "RMSE": 25.89324866385822,
+          "bias": 15.608921896053266
+        },
+        "fused": {
+          "MAE": 11.935049521772168,
+          "RMSE": 20.531609800100398,
+          "bias": -0.726309359828128
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 1.5
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "a2886c472c68e1a3f42ca0a9da953a1bb9571f87e2d56dd86f11c1a6017064d1",
+      "inputs_sha256": {
+        "runs/crowd/shtb_density_v2_seed0/weights/best.pt": "a2886c472c68e1a3f42ca0a9da953a1bb9571f87e2d56dd86f11c1a6017064d1",
+        "runs/eval/shtb_density_v2_seed0_val/summary.json": "73f0cbba1f85704fb52009b78710b0548516347dec993e4961c7cc4cc7c08ca9",
+        "runs/eval/shtb_density_v2_seed0_val/parameters.json": "027711b7cec51c1c3063f14878d8b50be4de28f5a54aa931fb225c7b80480435",
+        "runs/eval/shtb_density_v2_seed0_val/per_image.csv": "1e6182bda0c10431167cc1064f8bcb15c923068f030329db06956a8e3d1cd2db",
+        "runs/eval/shtb_density_v2_seed0_test/summary.json": "a6372f0f26357d7b9d16adea892736e32f417d6420d98906f271513d14ab7a2d",
+        "runs/eval/shtb_density_v2_seed0_test/parameters.json": "e6465aa452ab425f5becd5f839cfdb0029f7099fdb9d93dd25103818b487ccd2",
+        "runs/eval/shtb_density_v2_seed0_test/per_image.csv": "e5772e98b3d0553de4a554e178746e9692b1d83eaaf8a8188e9740ed0fa4a38b",
+        "runs/eval/shtb_density_v2_seed0_val/tau_sweep.csv": "7c6a6811bd990188f8e0b44f36d60ea27a4e113a6b5e82202b363a5f1551c40c",
+        "runs/crowd/shtb_density_v2_seed0/args.yaml": "78c3597a7f28f2922bc2fc9c989ffcd817a457f31405f8e7c17bcebc6d0c922d",
+        "runs/crowd/shtb_density_v2_seed0/results.csv": "46d1c4bbcb979ee088019bb036bd569485139408cc5daa34c479f0a5609126ff"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "full",
+      "seed": 1,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 33.572784810126585,
+          "RMSE": 56.03635235104196,
+          "bias": -33.43354430379747
+        },
+        "density": {
+          "MAE": 14.320104197610783,
+          "RMSE": 23.396805604997418,
+          "bias": 3.8602224995818317
+        },
+        "fused": {
+          "MAE": 14.108708097964902,
+          "RMSE": 23.334534228580065,
+          "bias": -3.34491228151925
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 1.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "aa21f0e930c09465ba13b9301bc4884f7a5836072992d315d19da9f76509310d",
+      "inputs_sha256": {
+        "runs/crowd/shtb_density_v2_seed1/weights/best.pt": "aa21f0e930c09465ba13b9301bc4884f7a5836072992d315d19da9f76509310d",
+        "runs/eval/shtb_density_v2_seed1_val/summary.json": "12a94e85facda7fa319fcc50fa40467984ccae788a21728dd6e5542afbb81ea9",
+        "runs/eval/shtb_density_v2_seed1_val/parameters.json": "90473a54e0fc0f69004a91de17baa143e07475c6d5039f8c58b6bc48cd7d814f",
+        "runs/eval/shtb_density_v2_seed1_val/per_image.csv": "297c5d5c8e5cfb923b196cedb6bd0a9b3b19018a102749aca271538643137e8b",
+        "runs/eval/shtb_density_v2_seed1_test/summary.json": "c51d1ee4a1410a0196e99e4346b9fa884e8ace7ace16477f7ee68c3130251546",
+        "runs/eval/shtb_density_v2_seed1_test/parameters.json": "90c435ef0a2f4527ba5a8a8e19a8b7ac291a139ffb7f0b5022690e22c7fbaccb",
+        "runs/eval/shtb_density_v2_seed1_test/per_image.csv": "9e8cfcd18456d3bf7539030704baa8de41c5a751a64fad32d3c9108679061ab5",
+        "runs/eval/shtb_density_v2_seed1_val/tau_sweep.csv": "48d0fab2909bb7ac146c89e8c90a2761d785ab59ef094c806746491e8013955a",
+        "runs/crowd/shtb_density_v2_seed1/args.yaml": "b0c70d0a99d10cd0f82d32f0abf4dd9ceb0589b44da50bcf58135a9522a80bba",
+        "runs/crowd/shtb_density_v2_seed1/results.csv": "c4edd1cc7abaa1cbdb8072a8190672a88a5843d12f338079bbcce7585b5aa0b9"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "full",
+      "seed": 2,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 27.889240506329113,
+          "RMSE": 42.831765391847654,
+          "bias": -27.674050632911392
+        },
+        "density": {
+          "MAE": 23.88505872895446,
+          "RMSE": 42.87163746729464,
+          "bias": -20.620405245430863
+        },
+        "fused": {
+          "MAE": 17.369888722142086,
+          "RMSE": 28.48582022807477,
+          "bias": -4.701232143595249
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "c06b649c46e243cf66020c2d4f7f2fc052742026c34135babadf22fe417f42fd",
+      "inputs_sha256": {
+        "runs/crowd/shtb_density_v2_seed2/weights/best.pt": "c06b649c46e243cf66020c2d4f7f2fc052742026c34135babadf22fe417f42fd",
+        "runs/eval/shtb_density_v2_seed2_val/summary.json": "f1ce3ea29429ae403be6a18cb2f86db61e4532d2c7962fd52c56f59f278829b1",
+        "runs/eval/shtb_density_v2_seed2_val/parameters.json": "48f4e88ab4e8ee2ea2307c15046da070a0814b04806f308b9c984259dae36f8b",
+        "runs/eval/shtb_density_v2_seed2_val/per_image.csv": "a41ebf6d39fee4163164b8cd8ce1a74651c3e578fe1295dee34d19bb5ed63389",
+        "runs/eval/shtb_density_v2_seed2_test/summary.json": "359ea7bd51ed36836c15dc495c40e93343f38b67caa9acea214d1a81616eb096",
+        "runs/eval/shtb_density_v2_seed2_test/parameters.json": "3da655faf305dd70ee11e8528e8a4db31056bbc65f8684ad6c859f28449c299f",
+        "runs/eval/shtb_density_v2_seed2_test/per_image.csv": "bc0ec25332ff6fb0f876281c6260e6830323665243e785494e73d1505f9a1396",
+        "runs/eval/shtb_density_v2_seed2_val/tau_sweep.csv": "050b35a58880ec22d53c4685f6709ab16ad70aab9d0200050812b0ee0eed05d6",
+        "runs/crowd/shtb_density_v2_seed2/args.yaml": "40cb1b40757b7aab652ca3c9107c09cd85af95f437448008ae16017f7c04332e",
+        "runs/crowd/shtb_density_v2_seed2/results.csv": "7044a85f222c2384f9f3c3b76bad069329914d59c305be2efeec247d52e30d9c"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_recal",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 30.367088607594937,
+          "RMSE": 50.53342044903037,
+          "bias": -30.265822784810126
+        },
+        "density": {
+          "MAE": 16.47367651251298,
+          "RMSE": 23.88409232321266,
+          "bias": 13.364488360248034
+        },
+        "fused": {
+          "MAE": 13.116577827477757,
+          "RMSE": 19.308941148096594,
+          "bias": -2.6573705582679072
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "5617405f1e2089d1b7b1de3a40776860ddbca2e8ba56a5cc4c029163b7592702",
+      "inputs_sha256": {
+        "runs/crowd/shtb_no_recal_seed0/weights/best.pt": "5617405f1e2089d1b7b1de3a40776860ddbca2e8ba56a5cc4c029163b7592702",
+        "runs/eval/shtb_no_recal_seed0_val/summary.json": "fb7739c3b63461541875000961458e36557d68fbf4ae120c023a4340a41b2cbe",
+        "runs/eval/shtb_no_recal_seed0_val/parameters.json": "e9e4a146079d7d3c29d20ebc6a1588473df436a39aa8ad506b02add7a4669bdf",
+        "runs/eval/shtb_no_recal_seed0_val/per_image.csv": "4430131dac6e8cdb19f16d3e96dfab187a0c3776e1a538aa171c02cfcea01547",
+        "runs/eval/shtb_no_recal_seed0_test/summary.json": "f77442dbebe8531d4763bd95b3e5b88dedaa6e7e4fca45810463f37630dc0d60",
+        "runs/eval/shtb_no_recal_seed0_test/parameters.json": "d37080f17887b2372c992e6ef65349637c33d2b6ac5945264766e87ff87c1c23",
+        "runs/eval/shtb_no_recal_seed0_test/per_image.csv": "53256ebaafbb55d015a8c7788d903239a8d2e0970743bf880b0521c56fbbbc49",
+        "runs/eval/shtb_no_recal_seed0_val/tau_sweep.csv": "d75680eb02db5823fec2f451c40f03489903bd40951d8a6c6d3fdcff9f279c94",
+        "runs/crowd/shtb_no_recal_seed0/args.yaml": "874fcd0f43a67d53d8ffe89b475e1151e25148a92d76726656b1e071a7fa3662",
+        "runs/crowd/shtb_no_recal_seed0/results.csv": "4353a4981c12b6b3cbd97f00c1ee4ccf70f12b6b7464704f99b2850dc2675a69"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_p2",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 20.325949367088608,
+          "RMSE": 35.964425108956235,
+          "bias": -19.768987341772153
+        },
+        "density": {
+          "MAE": 12.832531316370904,
+          "RMSE": 19.75616914592689,
+          "bias": 7.680826781671258
+        },
+        "fused": {
+          "MAE": 11.70035493222973,
+          "RMSE": 18.181141152334213,
+          "bias": -2.949319809297972
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 1.5
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "c411858ef598b63297568171d5a24926456b398ef523d82062834f2976445bc3",
+      "inputs_sha256": {
+        "runs/crowd/shtb_no_p2_seed0/weights/best.pt": "c411858ef598b63297568171d5a24926456b398ef523d82062834f2976445bc3",
+        "runs/eval/shtb_no_p2_seed0_val/summary.json": "76f4e711fcd9bdf1ae7a134f0f05f70554487ecc6b4d3d58ba454416bbb4b37d",
+        "runs/eval/shtb_no_p2_seed0_val/parameters.json": "9c1e6c5c7b621d11d07767da95e1a823cbe64aa166ccac3256ea16392b685ae3",
+        "runs/eval/shtb_no_p2_seed0_val/per_image.csv": "12ddbbfec297efb33c1515626354fa6e0a8c7f9f91852c7c18a026eac56f5aa8",
+        "runs/eval/shtb_no_p2_seed0_test/summary.json": "382ec3ab4d335e105f98f18c794b3ac656643d56029005b882db590fe1aef294",
+        "runs/eval/shtb_no_p2_seed0_test/parameters.json": "095182d830c58e08f90bd8b1781ea81561aaed1f629ca3d277051005b4e88b95",
+        "runs/eval/shtb_no_p2_seed0_test/per_image.csv": "953184de09a69350bf04be3193b8095b44db9b6b333e73b0eb040bb62ace9083",
+        "runs/eval/shtb_no_p2_seed0_val/tau_sweep.csv": "f4aceff8e838d8d1942b548478b5e4a35cd74daec455027f8ffe0f25d389a44d",
+        "runs/crowd/shtb_no_p2_seed0/args.yaml": "6c31d60255613da51c0000f89c1e51d037e514a673388411bd6965e3abeb15b2",
+        "runs/crowd/shtb_no_p2_seed0/results.csv": "0937a69a429c456f2cd02320345cda4fbf0f264f51e223beb4bf246648164dc6"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_p2",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 18.10126582278481,
+          "RMSE": 32.71037074736971,
+          "bias": -16.696202531645568
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "aed960228554b61ce440fff53ecbba8bd2d30ed7df6e1592a1e7c89b2cc9cee7",
+      "inputs_sha256": {
+        "runs/crowd/shtb_det_p2_seed0/weights/best.pt": "aed960228554b61ce440fff53ecbba8bd2d30ed7df6e1592a1e7c89b2cc9cee7",
+        "runs/eval/shtb_det_p2_seed0_val/summary.json": "4c189f757005a83eb4f1e6a135f232e36e6be5eeb255fe739bc9293f8cc8dbdd",
+        "runs/eval/shtb_det_p2_seed0_val/parameters.json": "9a32841465e3c9a207f3387fd4c30ae76c05c76f1d820248c0f5c6524cce2d2e",
+        "runs/eval/shtb_det_p2_seed0_val/per_image.csv": "b89ba11284dbe9ebe631b0d403dbfbfac418a6502a1191ba3dabf1c77b158282",
+        "runs/eval/shtb_det_p2_seed0_test/summary.json": "ef8c96c0f75ab8ab4e99df5cedcc3ec211539d727c73e7f8b118a8de18479c1c",
+        "runs/eval/shtb_det_p2_seed0_test/parameters.json": "43c40905473b58dc5859c62f1df1434e4fa1f1cde8337e576cf23f8adc0d0467",
+        "runs/eval/shtb_det_p2_seed0_test/per_image.csv": "0beccc731a2165aebc84a60a46cd7d34838587c5402a3aa8aa4822d7de895ad4",
+        "runs/crowd/shtb_det_p2_seed0/args.yaml": "8b9aef43f4c2a02e138214d37546f05ef60f7769672c3cb5dae1a6a1916c03e7",
+        "runs/crowd/shtb_det_p2_seed0/results.csv": "293e1f2501f5ab713a37deb2b596a21b05436d0c2cbfdebf64ec296273c1af02"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_yolo26",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 15.689873417721518,
+          "RMSE": 31.93733975906691,
+          "bias": -12.651898734177216
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "7fa3a6a41c42f2d925787b00f0cb76efb0212d16a7d0f1e7b985549c4984f073",
+      "inputs_sha256": {
+        "runs/crowd/shtb_det_yolo26_seed0/weights/best.pt": "7fa3a6a41c42f2d925787b00f0cb76efb0212d16a7d0f1e7b985549c4984f073",
+        "runs/eval/shtb_det_yolo26_seed0_val/summary.json": "f17011053951d0f9e8248852e3eace424d0719a7b8aff532c9e0394001a60ac6",
+        "runs/eval/shtb_det_yolo26_seed0_val/parameters.json": "a47ae33f4c52a1ba5ecb3243a25218bd49e3ecd81b2f16f6d53cc78ca86cca1a",
+        "runs/eval/shtb_det_yolo26_seed0_val/per_image.csv": "316904716cc77dae463f9bf26629e6757e401941bbe30f7748303430ee598c18",
+        "runs/eval/shtb_det_yolo26_seed0_test/summary.json": "ddc680f6d7abd7ad39f1bab21471e3622acd9e1867718b4d505cf38f620180e6",
+        "runs/eval/shtb_det_yolo26_seed0_test/parameters.json": "ae87e87f8bbaf230f9c0c6b17eb318faa03eb1d905c942860f10ed15043c8c8b",
+        "runs/eval/shtb_det_yolo26_seed0_test/per_image.csv": "623983cced3fe852333543a0c27cd79d7c81345f0b86443f32556d1f86e484e9",
+        "runs/crowd/shtb_det_yolo26_seed0/args.yaml": "01cb747e1f2af0d67299e0780a0c627207b827bad09cdced429704974fa1f10a",
+        "runs/crowd/shtb_det_yolo26_seed0/results.csv": "71e2b7103fc630ca894578e336b2d611cedd59a9df9ebfcebbb1067fb9e23dc8"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_count",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 27.455696202531644,
+          "RMSE": 44.7248267361907,
+          "bias": -27.164556962025316
+        },
+        "density": {
+          "MAE": 242.278660351717,
+          "RMSE": 243.43786073099858,
+          "bias": 242.278660351717
+        },
+        "fused": {
+          "MAE": 11.438454793978341,
+          "RMSE": 18.958430980830737,
+          "bias": -1.9402362938168682
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "8716c9ac2e3997ce7cd105e07e24989636d3f63f9c0c281a3f9ecbdde84923d0",
+      "inputs_sha256": {
+        "runs/crowd/shtb_no_count_seed0/weights/best.pt": "8716c9ac2e3997ce7cd105e07e24989636d3f63f9c0c281a3f9ecbdde84923d0",
+        "runs/eval/shtb_no_count_seed0_val/summary.json": "a256e035176582ac228ae198822a59a59db97ad574a59c5550b23bf8b0ca3e9f",
+        "runs/eval/shtb_no_count_seed0_val/parameters.json": "d917b0befe51b4898781135a4e2999a017ef0d1b0dda5903029f500d58164057",
+        "runs/eval/shtb_no_count_seed0_val/per_image.csv": "e4ee8982729c6c8c5d71dcaa8cd5160c9402c588f1dbf94ff642b0c383cb4053",
+        "runs/eval/shtb_no_count_seed0_test/summary.json": "712eac0a028935b4a7a766fc7185d3640bfb47730c72ee58a467e33a8431d6d3",
+        "runs/eval/shtb_no_count_seed0_test/parameters.json": "e427a9eae1bdc183908ba5bd4172187494a22db1b0c6f0559def16ea09db25bc",
+        "runs/eval/shtb_no_count_seed0_test/per_image.csv": "bebe108ff6552ed8d5199a9376cfdccc0b5a5b1334748181335620b56aa56cc5",
+        "runs/eval/shtb_no_count_seed0_val/tau_sweep.csv": "a30fe58808e307691525512ce0b0bf3c1899f434e2438160bb7aeb696cced968",
+        "runs/crowd/shtb_no_count_seed0/args.yaml": "83ec323d004ca1fe1cc730acb32970dcc0d20f41622125e526c6300458909033",
+        "runs/crowd/shtb_no_count_seed0/results.csv": "c4d58ac3c28a8d1308a18a962851f8eb4ba1d4d4cb08106928ecffbcdbd9da3f"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_cons",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 24.02848101265823,
+          "RMSE": 46.10015925725533,
+          "bias": -22.74367088607595
+        },
+        "density": {
+          "MAE": 12.236229142056235,
+          "RMSE": 19.594615842209667,
+          "bias": 5.085027314439604
+        },
+        "fused": {
+          "MAE": 11.238691595536244,
+          "RMSE": 18.857083241570262,
+          "bias": -2.474979955938798
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 1.5
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "bedc39bede55fcb12fb11d3dc310c6948b94b55ad49181d9463ddf830f7fdce6",
+      "inputs_sha256": {
+        "runs/crowd/shtb_no_cons_seed0/weights/best.pt": "bedc39bede55fcb12fb11d3dc310c6948b94b55ad49181d9463ddf830f7fdce6",
+        "runs/eval/shtb_no_cons_seed0_val/summary.json": "759d2e550259e82dae6b07153ad63c5b460bcb4b769c7711ba70af5836bba74e",
+        "runs/eval/shtb_no_cons_seed0_val/parameters.json": "c4f9b07a469a5ad8dcea55e70ff91babfe5a733cbe3de2dfb1729aea3354a318",
+        "runs/eval/shtb_no_cons_seed0_val/per_image.csv": "747bab74c07e2a4d238a6dd94fd745c5f10de9b369a4be9c66b5811190a8b06b",
+        "runs/eval/shtb_no_cons_seed0_test/summary.json": "c70d92b55eca5147a86575e0dad8b2e7c06fc5d58d263d9f1e64864c66c5ef1a",
+        "runs/eval/shtb_no_cons_seed0_test/parameters.json": "42db02dbe8854f15587da2f1471d2a57cd259aab012feb77639fdcb270aaadc7",
+        "runs/eval/shtb_no_cons_seed0_test/per_image.csv": "7dbf6f06f1d24e51ebe46da29f897174d3d9ced7e301eb6c4c3981c5211af96b",
+        "runs/eval/shtb_no_cons_seed0_val/tau_sweep.csv": "ba334ac2315e46f5fda427352874d2f6c0307c821bf1d0ef8ee271f19ab55831",
+        "runs/crowd/shtb_no_cons_seed0/args.yaml": "9694ae513ed554e3df0440f51e95f9b764dd9f733b98b94176feca675385a672",
+        "runs/crowd/shtb_no_cons_seed0/results.csv": "404c4bf9d09624e8238457f6d4fc9a9f89b22326d20e0114a19804fd5bdc6d54"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "density_mse",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "detect": {
+          "MAE": 20.401898734177216,
+          "RMSE": 39.224080371790215,
+          "bias": -18.332278481012658
+        },
+        "density": {
+          "MAE": 182.8916473388672,
+          "RMSE": 184.30920644307278,
+          "bias": 182.8916473388672
+        },
+        "fused": {
+          "MAE": 11.279875248293333,
+          "RMSE": 19.700193642000478,
+          "bias": -3.880624252029612
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "conf": 0.25,
+        "iou": 0.5,
+        "max_det": 2000,
+        "grid": 16,
+        "tau": 2.0
+      },
+      "recipe": {
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "MuSGD",
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "cos_lr": false,
+        "warmup_epochs": 3.0,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "amp": true
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "c3fc5d0e1f070c37d70dc79c64dbe83284c8ce68d546375e533d87f8cd3bbae1",
+      "inputs_sha256": {
+        "runs/crowd/shtb_density_mse_seed0/weights/best.pt": "c3fc5d0e1f070c37d70dc79c64dbe83284c8ce68d546375e533d87f8cd3bbae1",
+        "runs/eval/shtb_density_mse_seed0_val/summary.json": "7a72a521cbefea846ebd3384652cdeb75d22fed15a95bd1800e8d2aae61a7dbf",
+        "runs/eval/shtb_density_mse_seed0_val/parameters.json": "ffb0e0a06feeba8f1ef413945ff7630c9c3e903251ea7242e659c20461a9e3b7",
+        "runs/eval/shtb_density_mse_seed0_val/per_image.csv": "60e5b862ff1d17451040c21a990e3f3a3edabe97fcdf01c4b7826bbb68d67f0b",
+        "runs/eval/shtb_density_mse_seed0_test/summary.json": "2a9bd3c1f59afb3069247fa80638b325f40d78eac715593cda7f53952fb2d47f",
+        "runs/eval/shtb_density_mse_seed0_test/parameters.json": "0c9486b9bc2dfa24f9982c65f875b88ac4e310fe85ddb34475852e3100b8f1d7",
+        "runs/eval/shtb_density_mse_seed0_test/per_image.csv": "f2cc5718546a0724511b7b54b50189750aa44b4f735fde9e827a9b5daab2f9e7",
+        "runs/eval/shtb_density_mse_seed0_val/tau_sweep.csv": "489b640ea5b2c0d172e837bed0c8d128067455e299175740519d822b453c7762",
+        "runs/crowd/shtb_density_mse_seed0/args.yaml": "ae87cd2b4ef0f296e788412e00d6c6e2d690f65599182d3222cd1ee445a1c746",
+        "runs/crowd/shtb_density_mse_seed0/results.csv": "d45940cf7cf88a0a000583b2d6a1a5eccdef1bdfafec01fa88260bff1b00321c"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "mcnn",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "density": {
+          "MAE": 20.23039597348322,
+          "RMSE": 29.83837593778878,
+          "bias": 0.4445422767083856
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "normalization": "unit_rgb",
+        "output": "signed_density_integral"
+      },
+      "recipe": {
+        "recipe": "matched_canvas_density_v2_v1",
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "Adam",
+        "lr0": 0.0001,
+        "precision": "FP32",
+        "loss": "mean squared density error",
+        "initialization": "Gaussian std=0.01"
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "ece429207c59d7ac2b8356a4cc4c7570aa695949f04a89e16c077fa813ae361c",
+      "inputs_sha256": {
+        "runs/crowd/shtb_mcnn_seed0/weights/best.pt": "ece429207c59d7ac2b8356a4cc4c7570aa695949f04a89e16c077fa813ae361c",
+        "runs/eval/shtb_mcnn_seed0_val/summary.json": "7abb8d3d596f65f2a548a35809c4462df713eaf2dc5fa72533f2de0c68380055",
+        "runs/eval/shtb_mcnn_seed0_val/parameters.json": "1b901e16b7954a31f3a68de3835de83877677602c0a0ee8a6dffed39e4f30b96",
+        "runs/eval/shtb_mcnn_seed0_val/per_image.csv": "068149c53b84565576085d4c03a01b34a0bc2720e33577e27ca3b49468e9c826",
+        "runs/eval/shtb_mcnn_seed0_test/summary.json": "c9d130a6f3e25ade0a2c09725b0c96f6e3917f7a7e24e7b3a923278c7f476454",
+        "runs/eval/shtb_mcnn_seed0_test/parameters.json": "91005f3311bd7897e7db8ca3ac001480b6bce325e5badf2883667c781fef33a2",
+        "runs/eval/shtb_mcnn_seed0_test/per_image.csv": "17ea29b7143a7cbe7e14661b2df67c16c7431b0627a57e319c5596cc9017bce1",
+        "runs/crowd/shtb_mcnn_seed0/baseline_config.json": "c8f47e9d91653e4b980ae36b35233104dfa4764b7ac1f66e3d8aedb9468c82f7",
+        "runs/crowd/shtb_mcnn_seed0/results.csv": "28a7b959d1e7facb3541e88237e7e0974b2b006d287246739f03102fff68f8d1"
+      }
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "csrnet",
+      "seed": 0,
+      "protocol_id": "b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e",
+      "metrics": {
+        "density": {
+          "MAE": 13.589921586121186,
+          "RMSE": 24.49012479525887,
+          "bias": 2.1490704832197745
+        }
+      },
+      "settings": {
+        "imgsz": 640,
+        "normalization": "imagenet",
+        "output": "signed_density_integral"
+      },
+      "recipe": {
+        "recipe": "matched_canvas_density_v2_v1",
+        "epochs": 300,
+        "patience": 100,
+        "batch": 4,
+        "imgsz": 640,
+        "optimizer": "SGD",
+        "lr0": 1e-07,
+        "precision": "FP32",
+        "loss": "sum squared density error per image, averaged over batch",
+        "initialization": "VGG16 ImageNet frontend; Gaussian backend"
+      },
+      "environment": {
+        "torch": "2.3.0+cu121",
+        "ultralytics": "8.4.175",
+        "device_name": "NVIDIA GeForce RTX 3080 Ti"
+      },
+      "weights_sha256": "3e7e23770f10f71a8adfabad34f0d1770501d521f2538777fcbb804387f3cf58",
+      "inputs_sha256": {
+        "runs/crowd/shtb_csrnet_seed0/weights/best.pt": "3e7e23770f10f71a8adfabad34f0d1770501d521f2538777fcbb804387f3cf58",
+        "runs/eval/shtb_csrnet_seed0_val/summary.json": "14c4999bba033628446c6bd16f3e8ccb40801f7415b88d69315c7ad956db647d",
+        "runs/eval/shtb_csrnet_seed0_val/parameters.json": "abb7b1e5808b4305e76b5c6d2c23694f99933e29b4cd0fba8a179fc11af25586",
+        "runs/eval/shtb_csrnet_seed0_val/per_image.csv": "2b3fa27895479d83147a472425fb4503546825373eaca787809bc120d163fb8a",
+        "runs/eval/shtb_csrnet_seed0_test/summary.json": "005975406e5befd93973ad3b5f45cc72cf617c4bd80430162c2ddd484e872b92",
+        "runs/eval/shtb_csrnet_seed0_test/parameters.json": "1669a37220cf051c83fe667be14513b10254c8911c7f4e50a731f5d03431f454",
+        "runs/eval/shtb_csrnet_seed0_test/per_image.csv": "9436afe6dec10cfbb51f532e74aadf8d4a12f709eb2dde61c23326cdbee60dd0",
+        "runs/crowd/shtb_csrnet_seed0/baseline_config.json": "5d34b1a1e75527916fb54704eb110b3a8b18f737a25ecec6ba0de16040604605",
+        "runs/crowd/shtb_csrnet_seed0/results.csv": "180a0ab6dc372f97767fc185ad9e64f1f1bae427bdcc303e1da1331d9d80e6a6"
+      }
+    }
+  ],
+  "pending": [
+    {
+      "dataset": "sht_a",
+      "variant": "no_recal",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_recal",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_p2",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_p2",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_p2",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_p2",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_yolo26",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_yolo26",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_count",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_count",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_cons",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_cons",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "density_mse",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "density_mse",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "mcnn",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "mcnn",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "csrnet",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "csrnet",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_recal",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_recal",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_p2",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_p2",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_p2",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_p2",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_yolo26",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_yolo26",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_count",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_count",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_cons",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_cons",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "density_mse",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "density_mse",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "mcnn",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "mcnn",
+      "seed": 2
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "csrnet",
+      "seed": 1
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "csrnet",
+      "seed": 2
+    }
+  ],
+  "invalid": [],
+  "aggregates": [
+    {
+      "dataset": "sht_a",
+      "variant": "full",
+      "mode": "detect",
+      "n": 3,
+      "seeds": "0,1,2",
+      "status": "complete",
+      "MAE_mean": 291.040293040293,
+      "MAE_std": 19.941166282537377,
+      "RMSE_mean": 376.73994528771163,
+      "RMSE_std": 27.181393069998443,
+      "bias_mean": -291.040293040293,
+      "bias_std": 19.941166282537377
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "full",
+      "mode": "density",
+      "n": 3,
+      "seeds": "0,1,2",
+      "status": "complete",
+      "MAE_mean": 100.12619578183352,
+      "MAE_std": 6.4814612942032666,
+      "RMSE_mean": 169.66245110966375,
+      "RMSE_std": 4.285032047941053,
+      "bias_mean": 48.34125730493566,
+      "bias_std": 6.385586365473226
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "full",
+      "mode": "fused",
+      "n": 3,
+      "seeds": "0,1,2",
+      "status": "complete",
+      "MAE_mean": 96.95098707178137,
+      "MAE_std": 6.361963087896464,
+      "RMSE_mean": 165.8442688981488,
+      "RMSE_std": 3.827698472570273,
+      "bias_mean": 15.43953938885923,
+      "bias_std": 2.9386870907201463
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_recal",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 240.52747252747253,
+      "MAE_std": null,
+      "RMSE_mean": 301.6180358672862,
+      "RMSE_std": null,
+      "bias_mean": -240.28571428571428,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_recal",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 205.36438713492927,
+      "MAE_std": null,
+      "RMSE_mean": 351.5971600126313,
+      "RMSE_std": null,
+      "bias_mean": -121.42725485497779,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_recal",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 149.52846756610242,
+      "MAE_std": null,
+      "RMSE_mean": 213.04039253897272,
+      "RMSE_std": null,
+      "bias_mean": -0.5430500219156454,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_p2",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 185.30769230769232,
+      "MAE_std": null,
+      "RMSE_mean": 258.19698162194175,
+      "RMSE_std": null,
+      "bias_mean": -184.28571428571428,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_p2",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 95.87054650862139,
+      "MAE_std": null,
+      "RMSE_mean": 160.2014723295943,
+      "RMSE_std": null,
+      "bias_mean": 56.265362435644796,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_p2",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 95.24401468759055,
+      "MAE_std": null,
+      "RMSE_mean": 153.80863476191504,
+      "RMSE_std": null,
+      "bias_mean": 20.840192868159367,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_p2",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 157.1978021978022,
+      "MAE_std": null,
+      "RMSE_mean": 228.93247240851815,
+      "RMSE_std": null,
+      "bias_mean": 38.747252747252745,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_yolo26",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 81.84065934065934,
+      "MAE_std": null,
+      "RMSE_mean": 166.52770947196151,
+      "RMSE_std": null,
+      "bias_mean": -36.39010989010989,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_count",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 292.4835164835165,
+      "MAE_std": null,
+      "RMSE_mean": 386.6437295836745,
+      "RMSE_std": null,
+      "bias_mean": -292.4835164835165,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_count",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 235.78153388054815,
+      "MAE_std": null,
+      "RMSE_mean": 250.43295139497982,
+      "RMSE_std": null,
+      "bias_mean": 208.54159059629336,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_count",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 93.00573965219351,
+      "MAE_std": null,
+      "RMSE_mean": 143.64468872698254,
+      "RMSE_std": null,
+      "bias_mean": 1.9297607757233002,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_cons",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 191.46153846153845,
+      "MAE_std": null,
+      "RMSE_mean": 333.34693012562127,
+      "RMSE_std": null,
+      "bias_mean": -184.67032967032966,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_cons",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 83.46374853364713,
+      "MAE_std": null,
+      "RMSE_mean": 129.2945019927934,
+      "RMSE_std": null,
+      "bias_mean": 12.766917155339168,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_cons",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 78.04655385279393,
+      "MAE_std": null,
+      "RMSE_mean": 128.8237565950701,
+      "RMSE_std": null,
+      "bias_mean": -17.360421610402536,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "density_mse",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 144.22527472527472,
+      "MAE_std": null,
+      "RMSE_mean": 275.7620908849343,
+      "RMSE_std": null,
+      "bias_mean": -131.5879120879121,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "density_mse",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 166.97193397270453,
+      "MAE_std": null,
+      "RMSE_mean": 190.78344509988065,
+      "RMSE_std": null,
+      "bias_mean": 131.32972272935805,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "density_mse",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 78.16767602438455,
+      "MAE_std": null,
+      "RMSE_mean": 137.2275467354444,
+      "RMSE_std": null,
+      "bias_mean": -0.5044188866248498,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "mcnn",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 130.9326304760608,
+      "MAE_std": null,
+      "RMSE_mean": 199.17463431355856,
+      "RMSE_std": null,
+      "bias_mean": -17.48955573616447,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "csrnet",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 84.78524245796623,
+      "MAE_std": null,
+      "RMSE_mean": 132.36225330059136,
+      "RMSE_std": null,
+      "bias_mean": -23.25127303993309,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "full",
+      "mode": "detect",
+      "n": 3,
+      "seeds": "0,1,2",
+      "status": "complete",
+      "MAE_mean": 29.397679324894515,
+      "MAE_std": 3.6618304571130147,
+      "RMSE_mean": 49.24204015631675,
+      "RMSE_std": 6.610665076345148,
+      "bias_mean": -29.087552742616033,
+      "bias_std": 3.8396044879012208
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "full",
+      "mode": "density",
+      "n": 3,
+      "seeds": "0,1,2",
+      "status": "complete",
+      "MAE_mean": 19.456166596352297,
+      "MAE_std": 4.821530476482719,
+      "RMSE_mean": 30.720563912050093,
+      "RMSE_std": 10.596909851237582,
+      "bias_mean": -0.3837536165985885,
+      "bias_std": 18.48376412523169
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "full",
+      "mode": "fused",
+      "n": 3,
+      "seeds": "0,1,2",
+      "status": "complete",
+      "MAE_mean": 14.471215447293051,
+      "MAE_std": 2.735494099282079,
+      "RMSE_mean": 24.11732141891841,
+      "RMSE_std": 4.034468084164554,
+      "bias_mean": -2.924151261647542,
+      "bias_std": 2.020589681531198
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_recal",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 30.367088607594937,
+      "MAE_std": null,
+      "RMSE_mean": 50.53342044903037,
+      "RMSE_std": null,
+      "bias_mean": -30.265822784810126,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_recal",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 16.47367651251298,
+      "MAE_std": null,
+      "RMSE_mean": 23.88409232321266,
+      "RMSE_std": null,
+      "bias_mean": 13.364488360248034,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_recal",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 13.116577827477757,
+      "MAE_std": null,
+      "RMSE_mean": 19.308941148096594,
+      "RMSE_std": null,
+      "bias_mean": -2.6573705582679072,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_p2",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 20.325949367088608,
+      "MAE_std": null,
+      "RMSE_mean": 35.964425108956235,
+      "RMSE_std": null,
+      "bias_mean": -19.768987341772153,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_p2",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 12.832531316370904,
+      "MAE_std": null,
+      "RMSE_mean": 19.75616914592689,
+      "RMSE_std": null,
+      "bias_mean": 7.680826781671258,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_p2",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 11.70035493222973,
+      "MAE_std": null,
+      "RMSE_mean": 18.181141152334213,
+      "RMSE_std": null,
+      "bias_mean": -2.949319809297972,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_p2",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 18.10126582278481,
+      "MAE_std": null,
+      "RMSE_mean": 32.71037074736971,
+      "RMSE_std": null,
+      "bias_mean": -16.696202531645568,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_yolo26",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 15.689873417721518,
+      "MAE_std": null,
+      "RMSE_mean": 31.93733975906691,
+      "RMSE_std": null,
+      "bias_mean": -12.651898734177216,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_count",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 27.455696202531644,
+      "MAE_std": null,
+      "RMSE_mean": 44.7248267361907,
+      "RMSE_std": null,
+      "bias_mean": -27.164556962025316,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_count",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 242.278660351717,
+      "MAE_std": null,
+      "RMSE_mean": 243.43786073099858,
+      "RMSE_std": null,
+      "bias_mean": 242.278660351717,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_count",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 11.438454793978341,
+      "MAE_std": null,
+      "RMSE_mean": 18.958430980830737,
+      "RMSE_std": null,
+      "bias_mean": -1.9402362938168682,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_cons",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 24.02848101265823,
+      "MAE_std": null,
+      "RMSE_mean": 46.10015925725533,
+      "RMSE_std": null,
+      "bias_mean": -22.74367088607595,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_cons",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 12.236229142056235,
+      "MAE_std": null,
+      "RMSE_mean": 19.594615842209667,
+      "RMSE_std": null,
+      "bias_mean": 5.085027314439604,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_cons",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 11.238691595536244,
+      "MAE_std": null,
+      "RMSE_mean": 18.857083241570262,
+      "RMSE_std": null,
+      "bias_mean": -2.474979955938798,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "density_mse",
+      "mode": "detect",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 20.401898734177216,
+      "MAE_std": null,
+      "RMSE_mean": 39.224080371790215,
+      "RMSE_std": null,
+      "bias_mean": -18.332278481012658,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "density_mse",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 182.8916473388672,
+      "MAE_std": null,
+      "RMSE_mean": 184.30920644307278,
+      "RMSE_std": null,
+      "bias_mean": 182.8916473388672,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "density_mse",
+      "mode": "fused",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 11.279875248293333,
+      "MAE_std": null,
+      "RMSE_mean": 19.700193642000478,
+      "RMSE_std": null,
+      "bias_mean": -3.880624252029612,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "mcnn",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 20.23039597348322,
+      "MAE_std": null,
+      "RMSE_mean": 29.83837593778878,
+      "RMSE_std": null,
+      "bias_mean": 0.4445422767083856,
+      "bias_std": null
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "csrnet",
+      "mode": "density",
+      "n": 1,
+      "seeds": "0",
+      "status": "pending_seeds",
+      "MAE_mean": 13.589921586121186,
+      "MAE_std": null,
+      "RMSE_mean": 24.49012479525887,
+      "RMSE_std": null,
+      "bias_mean": 2.1490704832197745,
+      "bias_std": null
+    }
+  ],
+  "runtime": [
+    {
+      "dataset": "sht_a",
+      "variant": "full",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537945,
+      "network_median_ms": 19.40352190285921,
+      "end_to_end_median_ms": 81.37661358341575,
+      "end_to_end_p95_ms": 498.3491561142728,
+      "serial_images_per_second": 7.588480602576176,
+      "summary_sha256": "f70da7bb5b848ff83e4360fb3a632f4ee1b34a1112ecda290d21a50ab7380948",
+      "samples_sha256": "67f86c2ac5666a009d116b7856a0b99129abdd51c191a33679b3ba893e8e723d"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_recal",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537769,
+      "network_median_ms": 18.970380071550608,
+      "end_to_end_median_ms": 95.27852479368448,
+      "end_to_end_p95_ms": 471.43233495298773,
+      "serial_images_per_second": 7.34850624541009,
+      "summary_sha256": "915bf76ff283d04ae8af39c205c8f7c8efb168d4552643fa97629f36413592d5",
+      "samples_sha256": "4b2c2d223a1e006339879825a2cb3be86d97620b47fec82071a93e2442b140cd"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_p2",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2558751,
+      "network_median_ms": 15.241490444168448,
+      "end_to_end_median_ms": 124.92574215866625,
+      "end_to_end_p95_ms": 368.21973784826696,
+      "serial_images_per_second": 6.8630438277025085,
+      "summary_sha256": "1446a73829d519e75dad63e351bbb95756d13593a2ac1691ac7ea05e772255b8",
+      "samples_sha256": "1c767f5016859b100a4d056e156ffa31c4397c138340d9a1916426012d281ac6"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_p2",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2515976,
+      "network_median_ms": 18.378254026174545,
+      "end_to_end_median_ms": 209.82711226679385,
+      "end_to_end_p95_ms": 619.0578517504036,
+      "serial_images_per_second": 4.333555596823196,
+      "summary_sha256": "fbaf87d91fca03bdcc3fad7c53096c5d16107f57fb944f0d346855e0503afb22",
+      "samples_sha256": "3e50ec1b661f3df432b09d5b1fad830e22b6506a35a487894f7a5501f49721b5"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "det_yolo26",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2533886,
+      "network_median_ms": 14.297024114057422,
+      "end_to_end_median_ms": 163.85961091145873,
+      "end_to_end_p95_ms": 410.6920631369576,
+      "serial_images_per_second": 4.819260782697669,
+      "summary_sha256": "d01ac9a5338d85f3adb9269b42dae10bd948c0ecfc5cad78e1a636c2b558db20",
+      "samples_sha256": "c73458ad9ea07404fac2ddcd2f962c532c23b26dc909c941edae4facce6680e7"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_count",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537945,
+      "network_median_ms": 19.192552426829934,
+      "end_to_end_median_ms": 68.21406120434403,
+      "end_to_end_p95_ms": 362.8042604541406,
+      "serial_images_per_second": 9.422082856374516,
+      "summary_sha256": "7df9602e12044c3679789214b9b6cb0b270c94f9bb1769c445c2ec62bc97ebcb",
+      "samples_sha256": "fa71eb06a1372f92dfa941688333cf5bbc72e80918d8636b66b5c0abe20ed467"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "no_cons",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537945,
+      "network_median_ms": 19.415328977629542,
+      "end_to_end_median_ms": 107.941925060004,
+      "end_to_end_p95_ms": 388.93270248081535,
+      "serial_images_per_second": 6.846473923255476,
+      "summary_sha256": "2e8cc6fc8f8c40c074bf8ffb1e31973e580baddfd6391d0459719d266a369b7e",
+      "samples_sha256": "a3f7ae2c37616172c5e38d16e586c939ef593007bbe7fd6c1aafff4006714376"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "density_mse",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537945,
+      "network_median_ms": 19.141566939651966,
+      "end_to_end_median_ms": 145.524051040411,
+      "end_to_end_p95_ms": 516.6263759834692,
+      "serial_images_per_second": 5.422381977370041,
+      "summary_sha256": "d048e6407bd8fec20961b05590aa0f302dbe2a2d022114952da7aadc264fcc0f",
+      "samples_sha256": "f1819dc28ddcd2b71e3047de2c7b4d0bdd3600ba99c1d1a1676e18cc2aa3410b"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "mcnn",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 133705,
+      "network_median_ms": 3.2758754678070545,
+      "end_to_end_median_ms": 5.185433896258473,
+      "end_to_end_p95_ms": 5.3311786614358425,
+      "serial_images_per_second": 194.54306479722737,
+      "summary_sha256": "09fc1aaf03ff925b29578a7af5edccd89120c59c276250b06638022eb880a2b6",
+      "samples_sha256": "83d97e65ad557a6c05b659d19dbe9679fa7deeeb70ba165766bd31dd8a770d81"
+    },
+    {
+      "dataset": "sht_a",
+      "variant": "csrnet",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 16263489,
+      "network_median_ms": 13.590180082246661,
+      "end_to_end_median_ms": 15.515131643041968,
+      "end_to_end_p95_ms": 15.676156152039766,
+      "serial_images_per_second": 64.55848729424251,
+      "summary_sha256": "d543815b8b154a1120291aef2553d328e4680489bce886b78a221f067d136bba",
+      "samples_sha256": "2b5cd260ed1a9a8f66c922ea7475f83819a6f78769176e0e3c7ecf33a21851f5"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "full",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537945,
+      "network_median_ms": 19.14009149186313,
+      "end_to_end_median_ms": 55.6956201326102,
+      "end_to_end_p95_ms": 98.75952291768044,
+      "serial_images_per_second": 17.277548519152436,
+      "summary_sha256": "4b99b2c23303bf30dccdf267adf134a7a0c95a7f632b4d8063c5533ff11ba34c",
+      "samples_sha256": "8127f14f7082508885820cbda21b09e23c55304497a3cda6f64d210c2bf29545"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_recal",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537769,
+      "network_median_ms": 23.59054470434785,
+      "end_to_end_median_ms": 73.065176140517,
+      "end_to_end_p95_ms": 133.57676367741078,
+      "serial_images_per_second": 13.130889327718196,
+      "summary_sha256": "d47e79fd3280976c31a992f0e47ccc5dd9001bc932348a9731aaced4bad7e33f",
+      "samples_sha256": "d91d2c98f12572a58ad205eefb4558903149b6a1b40696b1899134a07610eed4"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_p2",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2558751,
+      "network_median_ms": 18.891223007813096,
+      "end_to_end_median_ms": 71.1849108338356,
+      "end_to_end_p95_ms": 140.35177670884877,
+      "serial_images_per_second": 13.12342815980674,
+      "summary_sha256": "e821cc7a32dd49fd6b3d1af47f0d3c157a0c33915371dea450137ec440e886da",
+      "samples_sha256": "a069d7c4426768f95e6c9df8b8597f5fc0322e6f9617496af50cf591abc3bcbd"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_p2",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2515976,
+      "network_median_ms": 23.081196239218116,
+      "end_to_end_median_ms": 77.75203394703567,
+      "end_to_end_p95_ms": 174.82642063405365,
+      "serial_images_per_second": 11.835023943067869,
+      "summary_sha256": "d67c203531a9ed68ee93f4f325b14d52b42fb95ab291917d4f91fbe030aec66d",
+      "samples_sha256": "fd00a8db44e06d520371b8f3b22aab39ee57c28b72f59c07e7a6b0d6f74d593c"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "det_yolo26",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2533886,
+      "network_median_ms": 14.545812970027328,
+      "end_to_end_median_ms": 56.06738477945328,
+      "end_to_end_p95_ms": 101.28915447276086,
+      "serial_images_per_second": 16.72271940169426,
+      "summary_sha256": "ca171e898911e1b29ae4b8b0e651146e0f266b8cb218892e3b03b4addbfe4be8",
+      "samples_sha256": "107abeca97907abf3a51a59807193a9e1459a289008c40745041507ae743c39e"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_count",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537945,
+      "network_median_ms": 19.37155704945326,
+      "end_to_end_median_ms": 53.444268414750695,
+      "end_to_end_p95_ms": 92.67808333970606,
+      "serial_images_per_second": 17.470495169586705,
+      "summary_sha256": "f14bc3b712fe72cf97b9b1ed870c048ecb7bad2b0d2fefa0f04e3186084f5ea9",
+      "samples_sha256": "05bdcb99ac7a2ee129314440a9e1440e1be2321f78cc5203982ab3428cd9ee1a"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "no_cons",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537945,
+      "network_median_ms": 18.787711393088102,
+      "end_to_end_median_ms": 56.72009661793709,
+      "end_to_end_p95_ms": 97.17302990611641,
+      "serial_images_per_second": 17.018353893923045,
+      "summary_sha256": "41393a2ca388a396334d492fa9d42509f558c21096f575fe365b266c9d50cfc8",
+      "samples_sha256": "a152e4a7adc85161d4758f96ad2748efb877a1d7601b1f8bc94a4e9bae17f820"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "density_mse",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 2537945,
+      "network_median_ms": 19.118792610242963,
+      "end_to_end_median_ms": 58.97204647772014,
+      "end_to_end_p95_ms": 99.96062631253153,
+      "serial_images_per_second": 16.54777048439709,
+      "summary_sha256": "1d3e21a89371bd7dfd8f329e5794ad3e8c49debfece678488f889717f7275213",
+      "samples_sha256": "a451c229c86f0dd70932db5729c254c4c678a945c21b2f915ede78fd63fbefbc"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "mcnn",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 133705,
+      "network_median_ms": 3.2649424392729998,
+      "end_to_end_median_ms": 5.367519101127982,
+      "end_to_end_p95_ms": 5.401937128044665,
+      "serial_images_per_second": 185.77945936272505,
+      "summary_sha256": "cadedeb9d51bdb1fd86db3f83c16220e6ae0b7994b2c8a09a7298ccfaca60e16",
+      "samples_sha256": "c4fce85797a6f46bb8a8bcb481ebe32b49b6011d503ab6eb464158c77ef3a82f"
+    },
+    {
+      "dataset": "sht_b",
+      "variant": "csrnet",
+      "device": "NVIDIA GeForce RTX 3080 Ti",
+      "torch": "2.3.0+cu121",
+      "ultralytics": "8.4.175",
+      "parameters": 16263489,
+      "network_median_ms": 13.62056122161448,
+      "end_to_end_median_ms": 15.69549459964037,
+      "end_to_end_p95_ms": 16.008698218502104,
+      "serial_images_per_second": 63.58213476559794,
+      "summary_sha256": "e2152389bb43ec45cc6957a3c92968151d9180424eb3fbe2bfe2ff4615f4c26a",
+      "samples_sha256": "42ed5e0a7f5771ded2a1b9f5b94d30a0a1aeb37959b15407ba58248159c398eb"
+    }
+  ],
+  "runtime_pending": []
+}

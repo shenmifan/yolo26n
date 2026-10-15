@@ -1,0 +1,33 @@
+path: /root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_a
+train: splits_seed42_server/train.txt
+val: splits_seed42_server/val.txt
+test: splits_seed42_server/test.txt
+nc: 1
+names:
+- head
+density_dir: density
+density_stride: 4
+count_manifest: splits_seed42/counts.json
+count_conf: 0.25
+count_iou: 0.5
+count_max_det: 2000
+grid: 16
+dgf_tau: 2.0
+protocol_id: 18d82cd4ea64fb0e8b4339dac6f7ff3ee16dab2b88378e5f8afcbf31d63413e5
+split_protocol:
+  dataset: ShanghaiTech-A
+  seed: 42
+  strategy: exclude exact duplicate training content; 5 near-equal count strata, 20%
+    validation per stratum
+  sha256:
+    train: 3d14f2cc83b2578c507d834d9ccd1cb7d9440e954391a79153242c27f2bf933b
+    val: 3ef5d1c5db21c333abb3328094108fa0614287fc744fc385f496f4d99400cd4f
+    test: ad15a3e302c91d2210fd589fd909230637d43d1e26ba49173851aed5f1bedd7a
+    counts: b72f64fdfd8732899854df59364cedb46b9a373aec550cb6e2de792014a2401f
+    excluded: 197f608186028597801750e10aab4b2651e572b92375ed3546e3dffa739849b1
+    supervision: 2c0eb6dbe42670b76fd2550895ddbe33e51ad17fd7f27799befa72748c980d85
+excluded: splits_seed42_server/excluded.txt
+density_root: /root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_a_density_v2/density
+density_count_tolerance: 0.0001
+supervision_manifest: /root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_a/splits_seed42_server/supervision_manifest.json
+relocated_from_protocol_id: 75a8fed200d79e00210aa6a1805333a58a038b6c660f1fd9082b53a64a3d4a0e

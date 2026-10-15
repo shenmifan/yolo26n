@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "train": 320,
+    "val": 80,
+    "test": 316
+  },
+  "label_count_mismatch_images": 158,
+  "mean_gt_minus_density": 7.0747527400240315,
+  "max_gt_minus_density": 57.491326336932275,
+  "note": "GT uses every original annotation point. Existing pseudo boxes/density targets are preserved; their count differences are audited, never used as evaluation GT."
+}

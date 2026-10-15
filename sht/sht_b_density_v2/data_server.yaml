@@ -1,0 +1,30 @@
+path: /root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_b
+train: splits_seed42_server/train.txt
+val: splits_seed42_server/val.txt
+test: splits_seed42_server/test.txt
+nc: 1
+names:
+- head
+density_dir: density
+density_stride: 4
+count_manifest: splits_seed42/counts.json
+count_conf: 0.25
+count_iou: 0.5
+count_max_det: 2000
+grid: 16
+dgf_tau: 2.0
+protocol_id: b413bf955c742f20ab409876ba8d702038a07181709ec2c7a7d5bffc306beb2e
+split_protocol:
+  dataset: ShanghaiTech-B
+  seed: 42
+  strategy: 5 count strata, 64 train + 16 val per stratum
+  sha256:
+    train: 0b9e160ae0e4df909aa854fb2632670ec37ee1459a9725e7c0eae1784183f83e
+    val: cd4312cebca0e648f42c70192ea1ac6d72452f5ec012376ea469909692058a35
+    test: 933a59c9e1dcc2ce1461f585725835f29a68a3dab561c0646513b9b2374b4d36
+    counts: c83c6587bdf839d45801ebfff8c8a95047d6cfa81140368cae5ea03571c3cc23
+    supervision: e762e6d33b3ababb07bcf5b257dcba234a0a80fda91d51caa8301af304c19645
+density_root: /root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_b_density_v2/density
+density_count_tolerance: 0.0001
+supervision_manifest: /root/autodl-tmp/test/dc-yolo26-crowd/datasets/sht_b/splits_seed42_server/supervision_manifest.json
+relocated_from_protocol_id: c461f5839d264c668740eb90c9d9255b41a916fc54bebe9b01087d9664c4c7ee

@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "train": 239,
+    "val": 60,
+    "test": 182
+  },
+  "label_count_mismatch_images": 128,
+  "mean_gt_minus_density": 4.9459792998391165,
+  "max_gt_minus_density": 101.59958987556234,
+  "note": "GT uses every original annotation point. Existing pseudo boxes/density targets are preserved; their count differences are audited, never used as evaluation GT.",
+  "excluded_images": 1,
+  "exclusions": [
+    {
+      "image": "images/train/shta_IMG_121.jpg",
+      "gt_count": 156,
+      "label_count": 156,
+      "density_sum": 151.1938155742062,
+      "source_split": "train_data",
+      "image_sha256": "ce975ec8c254e18687c2a4485a6bd19e3b18e797cc94ce03883732a3ae5fe4ca",
+      "annotation_sha256": "3fd00a6353f22e76a36a082e43db3f36f453627e45c82fff052e60960c15a48b",
+      "exclusion_reason": "duplicate_of_official_test",
+      "duplicate_of": "images/val/shta_IMG_98.jpg"
+    }
+  ],
+  "eligible_official_train_images": 299,
+  "exact_image_hash_overlap_after_exclusions": false
+}

@@ -1,0 +1,32 @@
+path: D:/TEST-1/dc-yolo26-crowd/datasets/sht_a
+train: splits_seed42/train.txt
+val: splits_seed42/val.txt
+test: splits_seed42/test.txt
+nc: 1
+names:
+- head
+density_dir: density
+density_stride: 4
+count_manifest: splits_seed42/counts.json
+count_conf: 0.25
+count_iou: 0.5
+count_max_det: 2000
+grid: 16
+dgf_tau: 2.0
+protocol_id: 75a8fed200d79e00210aa6a1805333a58a038b6c660f1fd9082b53a64a3d4a0e
+split_protocol:
+  dataset: ShanghaiTech-A
+  seed: 42
+  strategy: exclude exact duplicate training content; 5 near-equal count strata, 20%
+    validation per stratum
+  sha256:
+    train: d28ea9e25a39961bc7cd2578a46c1038e937e32f60f9cdcf6aa72efffd54ad3d
+    val: b2a5329bfc7e77e2c4ea6786b3c31d2afa5cb2760c9e21054b056a4ca0834890
+    test: f3e47686b70a91b8fa9ddbf9fa8476fe85b4e670d25d770b8b3b28f34cc06802
+    counts: b72f64fdfd8732899854df59364cedb46b9a373aec550cb6e2de792014a2401f
+    excluded: 3df4bc64dd8795ed1235eea684fbbf697894efa2b93f7f1b83db50921fcbd92e
+    supervision: 3736580c937daa98c0203c66a04d04691c552ef1826dd44eb85eed4446c05be1
+excluded: splits_seed42/excluded.txt
+density_root: D:/TEST-1/dc-yolo26-crowd/datasets/sht_a_density_v2/density
+density_count_tolerance: 0.0001
+supervision_manifest: D:/TEST-1/dc-yolo26-crowd/datasets/sht_a_density_v2/supervision_manifest.json
